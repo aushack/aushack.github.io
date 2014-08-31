@@ -1,0 +1,14 @@
+RemotelyAnywhere - Multiple Vulnerabilities
+
+1. There is a service 'RAMaint' (probably a watchdog task). It runs as LocalSystem and uses an unsafe path in versions earlier than v8.
+
+2. If authenticated, you can fetch log files via
+
+/download/?dir=C:\Program%20Files\RemotelyAnywhere\&file=RemotelyAnywhere.log&pack=txt
+
+Of course, you could change this to read files the server administrator had not necessarily intended.
+
+3. There is an XSS in the custom RA HTTP service, which you can use to steal cookies. Of course, you need to entice your target to visit the address.
+
+http://[target]/img/%3Cscript%3Ealert(document.cookie);%3C/script%3E.html
+
