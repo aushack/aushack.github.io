@@ -21,9 +21,12 @@ I'm updating my website. Nothing is here yet.
 Published advisories can usually be found <a href="http://osvdb.org/creditees/5058-patrick-webster">here</a>.
 Public Metasploit Framework modules are generally found in <a href="https://github.com/rapid7/metasploit-framework">git</a>.
 For work engagements, try <a href="http://www.osisecurity.com.au">OSI Security</a>.
-For the 2600 Australia chapter, go to <a href="http://www.2600.org.au">2600.org.au</a>.
+For the 2600 Australia chapter, go to <a href="http://www.2600.org.au">2600.org.au</a>. Get the <a href="https://play.google.com/store/apps/details?id=com.aushack.au2600">Android App</a>.
 Donations of money and equipment to the <a href="http://acms.org.au">Australian Computer Museum Society</a>.
-Test your anti-malware software at <a href="http://wicar.org/">WICAR</a>.
+Test your anti-malware software at <a href="http://wicar.org/">WICAR</a>. Also see <a href="https://github.com/wicar">the source code</a>.
+Convert binary to a book and back? <a href="https://github.com/aushack/bin2words">Bin2Words.rb on github</a>. Good for preventing MD5 file identification and deletion on cloud storage etc.
+Work in progress: <a href="https://play.google.com/store/apps/details?id=com.aushack.businessbasicsaustralia">Business Basics Australia</a> app.
+Android game (development in progress): github later.
 
 Contact:
 
@@ -34,6 +37,16 @@ twitter.com/aushack
 facebook.com/aushack
 skype:aushack
 linkedin:<a href="http://www.linkedin.com/in/patrickwebster">http://www.linkedin.com/in/patrickwebster</a>.
+
+Retired projects:
+
+* Robanukah <i>was</i> a search engine which scanned URLs for the /robots.txt file and stored all the "disallow" entries. It was great for finding hidden administration interfaces,
+ internal company documents, passwords and other goodies. Today, you can just ask Google for something like <a href="https://www.google.com.au/search?q=disallow%3A+inurl%3A%2Frobots.txt+filetype%3Atxt+XLS">"disallow:" inurl:/robots.txt filetype:txt XLS</a> instead (for XLS spreadsheet).
+
+* OpenPath.rb <i>was</i> a ruby script for Microsoft Windows systems which would enumerate the registry for services which run as LocalSystem, which use unquoted paths. Unquoted paths can
+ be abused to gain SYSTEM access / privesc. It also tested files where the path was correctly quoted, but the file itself had incorrect NTFS permissions which allows write access. In which case,
+ an attacker could simply copy the executable, overwrite it with a malicious payload, start the service, then after privesc, reinstating the original executable.
+
 </pre>
 </body>
 </html>
