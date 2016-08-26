@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>aushack.com - openpath</title>
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5568574-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<pre>
+openpath.rb tools
+
+1. <a href="adduser.exe">adduser.exe</a> is a win32 executable which simply adds a user named 'pwnadmin' with a password of 'P@ssw0rd!23' and adds them to the local Administrators group. (<a href="main.cpp">source</a>)
+
+Rename this file and save it in e.g. C:\Program.exe and reboot the PC to abuse open paths in Windows services and execute code as SYSTEM.
+
+2. openpath.exe
+
+Designed for use in security auditing & penetration tests. Openpath discovers vulnerable services, permissions, paths and registry entries which may be used to elevate a normal user account to LocalSystem.
+
+At the moment, it only checks for vulnerable services, run keys, and writable files.
+
+3. OFFENDERS:
+
+</pre>
+</body>
+</html>
